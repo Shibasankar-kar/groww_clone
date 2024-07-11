@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "175742091827",
+    "project_id": "groww-clone-f1d9b",
+    "storage_bucket": "groww-clone-f1d9b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:175742091827:android:cc42c2189c4225891d5946",
+        "android_client_info": {
+          "package_name": "com.groww_clone"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6ASdrRSfj83tu1qkA3iDjPApVmZai3Ok"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
