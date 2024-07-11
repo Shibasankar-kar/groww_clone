@@ -44,7 +44,7 @@ export const darkTheme: Theme = {
 
 export const useCustomTheme = (): Theme => {
   // const currentTheme = useAppSelector(selectTheme);
-  const currentTheme = 'dark';
+  const currentTheme = useColorScheme();
   const scheme = useColorScheme();
   if (currentTheme) {
     //according to user preference
