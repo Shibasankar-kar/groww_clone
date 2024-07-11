@@ -9,3 +9,4 @@ export enum FONTS {
   NumberSemiBold = "Manrope-SemiBold",
   Lato = "Lato-Regular",
 }
+  
