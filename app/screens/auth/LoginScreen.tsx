@@ -8,7 +8,7 @@ const LoginScreen = () => {
   return (
     <CustomSafeAreaView>
       <View style={styles.container}>
-        <CustomText variant="h1" fontFamily={FONTS.Bold}>
+        <CustomText variant="h1" fontFamily={FONTS.Medium}>
           Together we Groww
         </CustomText>
         <CustomText variant="h7" style={styles.subText} fontFamily={FONTS.Bold}>
