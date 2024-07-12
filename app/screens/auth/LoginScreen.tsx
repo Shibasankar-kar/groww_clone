@@ -12,6 +12,8 @@ import {
 } from '../../utils/Scaling';
 import SocialLoginButton from '../../components/auth/SocialLoginButton';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import {TochableText} from '../../components/auth/TochableText';
+import {ButtomText} from '../../components/auth/ButtomText';
 
 const LoginScreen = () => {
   const theme = useCustomTheme();
@@ -43,8 +45,14 @@ const LoginScreen = () => {
         <SocialLoginButton
           onPress={() => {}}
           text="Signin With Apple"
-          icon={<Ionicons name="logo-apple" size={18} color={'black'} />}
+          icon={<Ionicons name="logo-apple" size={25} color={'black'} />}
         />
+        <TochableText
+          text="Use Other Email ID"
+          onPress={() => {}}
+          style={styles.touchText}
+        />
+        <ButtomText />
       </View>
     </CustomSafeAreaView>
   );
@@ -53,7 +61,11 @@ const LoginScreen = () => {
 export default LoginScreen;
 
 const styles = StyleSheet.create({
-  container: {flex: 1, alignItems: 'center', marginTop: 30},
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    marginTop: 20,
+  },
   subText: {
     marginTop: 16,
     opacity: 0.6,
@@ -67,5 +79,9 @@ const styles = StyleSheet.create({
     resizeMode: 'contain',
     width: '100%',
     height: '100%',
+  },
+  touchText: {
+    marginVertical: 30,
+    marginTop: 15,
   },
 });
