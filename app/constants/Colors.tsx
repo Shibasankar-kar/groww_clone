@@ -23,4 +23,6 @@ export enum Colors {
   profit = '#0ABB93',
   loss = '#D55538',
   errorColor = '#eb5b3c',
+
+  borderColor = '#DFDFDF',
 }

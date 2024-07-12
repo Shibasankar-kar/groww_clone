@@ -1,10 +1,19 @@
-import {StyleSheet, View} from 'react-native';
+import {Image, StyleSheet, View, useColorScheme} from 'react-native';
 import React from 'react';
 import CustomSafeAreaView from '../../components/global/CustomSafeAreaView';
 import CustomText from '../../components/global/CustomText';
 import {FONTS} from '../../constants/Fonts';
+import {useCustomTheme} from '../../navigation/Theme';
+import {IMAGES} from '../../constants/Images';
+import {
+  normalizeModerately,
+  screenHeight,
+  screenWidth,
+} from '../../utils/Scaling';
+import SocialLoginButton from '../../components/auth/SocialLoginButton';
 
 const LoginScreen = () => {
+  const theme = useCustomTheme();
   return (
     <CustomSafeAreaView>
       <View style={styles.container}>
@@ -17,6 +26,26 @@ const LoginScreen = () => {
           fontFamily={FONTS.Medium}>
           Invest • Pay • Loans
         </CustomText>
+        <View style={styles.imgContainer}>
+          <Image
+            style={styles.img}
+            source={theme.dark ? IMAGES.loginDarkImage : IMAGES.loginLightImage}
+          />
+        </View>
+        <SocialLoginButton
+          onPress={() => {}}
+          text="Signin With Google"
+          icon={
+            <Image source={IMAGES.google} style={{height: 20, width: 20}} />
+          }
+        />
+        {/* <SocialLoginButton
+          onPress={() => {}}
+          text="Signin With Apple"
+          icon={
+            <Image source={IMAGES.google} style={{height: 20, width: 20}} />
+          }
+        /> */}
       </View>
     </CustomSafeAreaView>
   );
@@ -29,5 +58,15 @@ const styles = StyleSheet.create({
   subText: {
     marginTop: 16,
     opacity: 0.6,
+  },
+  imgContainer: {
+    width: screenWidth,
+    height: screenHeight * 0.5,
+    marginVertical: normalizeModerately(30),
+  },
+  img: {
+    resizeMode: 'contain',
+    width: '100%',
+    height: '100%',
   },
 });
