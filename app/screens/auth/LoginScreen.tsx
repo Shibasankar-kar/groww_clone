@@ -11,6 +11,7 @@ import {
   screenWidth,
 } from '../../utils/Scaling';
 import SocialLoginButton from '../../components/auth/SocialLoginButton';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 
 const LoginScreen = () => {
   const theme = useCustomTheme();
@@ -39,13 +40,11 @@ const LoginScreen = () => {
             <Image source={IMAGES.google} style={{height: 20, width: 20}} />
           }
         />
-        {/* <SocialLoginButton
+        <SocialLoginButton
           onPress={() => {}}
           text="Signin With Apple"
-          icon={
-            <Image source={IMAGES.google} style={{height: 20, width: 20}} />
-          }
-        /> */}
+          icon={<Ionicons name="logo-apple" size={18} color={'black'} />}
+        />
       </View>
     </CustomSafeAreaView>
   );
