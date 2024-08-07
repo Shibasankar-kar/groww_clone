@@ -14,6 +14,8 @@ import SocialLoginButton from '../../components/auth/SocialLoginButton';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import {TochableText} from '../../components/auth/TochableText';
 import {ButtomText} from '../../components/auth/ButtomText';
+import {signinwithgoogle} from '../../redux/SocialLogin';
+import {navigate} from '../../utils/NavigationUtil';
 
 const LoginScreen = () => {
   const theme = useCustomTheme();
@@ -36,7 +38,7 @@ const LoginScreen = () => {
           />
         </View>
         <SocialLoginButton
-          onPress={() => {}}
+          onPress={() => signinwithgoogle()}
           text="Signin With Google"
           icon={
             <Image source={IMAGES.google} style={{height: 20, width: 20}} />
@@ -49,7 +51,7 @@ const LoginScreen = () => {
         />
         <TochableText
           text="Use Other Email ID"
-          onPress={() => {}}
+          onPress={() => navigate('EmailScreen')}
           style={styles.touchText}
         />
         <ButtomText />
@@ -73,7 +75,7 @@ const styles = StyleSheet.create({
   imgContainer: {
     width: screenWidth,
     height: screenHeight * 0.5,
-    marginVertical: normalizeModerately(30),
+    marginVertical: normalizeModerately(10),
   },
   img: {
     resizeMode: 'contain',

@@ -47,6 +47,20 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+
+	<!-- google singin setup -->
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+				<array>
+					<string>com.googleusercontent.apps.50556911420-h1l9pn65rdldhctr63ds6h8235rv3oj0</string>
+				</array>
+		</dict>
+	</array>
+	<key>GIDClientID</key>
+	<string>50556911420-h1l9pn65rdldhctr63ds6h8235rv3oj0.apps.googleusercontent.com</string>
+
 	<key>UIAppFonts</key>
 	<array>
 		<string>AntDesign.ttf</string>

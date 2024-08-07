@@ -6,6 +6,7 @@ import {useCustomTheme} from './Theme';
 import HomeScreen from '../screens/dashboard/HomeScreen';
 import LoginScreen from '../screens/auth/LoginScreen';
 import {navigationRef} from '../utils/NavigationUtil';
+import {EmailScreen} from '../screens/auth/EmailScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -30,6 +31,7 @@ const Navigation: React.FC = () => {
         screenOptions={() => ({headerShown: false})}>
         <Stack.Screen name="HomeScreen" component={HomeScreen} />
         <Stack.Screen name="LoginScreen" component={LoginScreen} />
+        <Stack.Screen name="EmailScreen" component={EmailScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
