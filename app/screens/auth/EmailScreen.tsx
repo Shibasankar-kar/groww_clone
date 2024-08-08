@@ -1,14 +1,14 @@
-import React, {FC} from 'react';
-import CustomSafeAreaView from '../../components/global/CustomSafeAreaView';
-import {BackButton} from '../../components/global/BackButton';
-import {goBack} from '../../utils/NavigationUtil';
-import {CenteredLogo} from '../../components/global/CenteredLogo';
+import {StyleSheet, Text, View} from 'react-native';
+import React from 'react';
 
-export const EmailScreen: FC = () => {
+const EmailScreen = () => {
   return (
-    <CustomSafeAreaView>
-      <BackButton onPress={() => goBack()} />
-      <CenteredLogo />
-    </CustomSafeAreaView>
+    <View>
+      <Text>EmailScreen</Text>
+    </View>
   );
 };
+
+export default EmailScreen;
+
+const styles = StyleSheet.create({});
