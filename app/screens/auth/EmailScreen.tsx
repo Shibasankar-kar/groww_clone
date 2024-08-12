@@ -1,11 +1,17 @@
-import {StyleSheet, Text, View} from 'react-native';
-import React from 'react';
+import {ScrollView, StyleSheet, Text, View} from 'react-native';
+import React, {FC} from 'react';
+import CustomSafeAreaView from '../../components/global/CustomSafeAreaView';
+import {BackButton} from '../../components/global/BackButton';
+import {CenteredLogo} from '../../components/global/CenteredLogo';
 
-const EmailScreen = () => {
+const EmailScreen: FC = () => {
   return (
-    <View>
-      <Text>EmailScreen</Text>
-    </View>
+    <CustomSafeAreaView>
+      <BackButton path="LoginScreen" />
+      <ScrollView>
+        <CenteredLogo />
+      </ScrollView>
+    </CustomSafeAreaView>
   );
 };
 
