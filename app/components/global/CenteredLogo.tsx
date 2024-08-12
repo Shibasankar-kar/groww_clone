@@ -22,6 +22,7 @@ const styles = StyleSheet.create({
     width: '100%',
     alignItems: 'center',
     justifyContent: 'center',
+    marginBottom: 5,
   },
   imgContainer: {width: normalizeWidth(110), height: normalizeHeight(28)},
   img: {width: '100%', height: '100%', resizeMode: 'contain'},
