@@ -7,12 +7,17 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:175742091827:android:cc42c2189c4225891d5946",
+        "mobilesdk_app_id": "1:175742091827:android:82ea5d6fcea2970c1d5946",
         "android_client_info": {
           "package_name": "com.groww_clone"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "175742091827-2h53p0s5hi6mrs03gd3dnsntbvhh633c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyD6ASdrRSfj83tu1qkA3iDjPApVmZai3Ok"
@@ -20,7 +25,19 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "175742091827-2h53p0s5hi6mrs03gd3dnsntbvhh633c.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "175742091827-8hjad69adqate2upecq8li4li23its33.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.groww-clone"
+              }
+            }
+          ]
         }
       }
     }

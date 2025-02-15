@@ -14,7 +14,7 @@ const Navigation: React.FC = () => {
     ...DefaultTheme,
     colors: {
       ...DefaultTheme.colors,
-      background: theme.colors.background,
+      background: theme.colors.background,  
       text: theme.colors.text,
       card: theme.colors.card,
       border: theme.colors.border,
