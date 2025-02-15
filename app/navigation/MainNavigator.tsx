@@ -1,5 +1,5 @@
 import {StyleSheet, Text, View} from 'react-native';
-import React from 'react';
+import React, { FC } from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import LoginScreen from '../screens/auth/LoginScreen';
 import HomeScreen from '../screens/dashboard/HomeScreen';
@@ -8,7 +8,7 @@ import {mergedStack} from './ScreenCollection';
 
 const Stack = createNativeStackNavigator();
 
-const MainNavigator = () => {
+const MainNavigator:FC = () => {
   return (
     <Stack.Navigator
       initialRouteName="LoginScreen"
